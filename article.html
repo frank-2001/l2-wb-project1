@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mk-Store | Article</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .art-plage{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        /* justify-items: center; */
+        height: 40rem;
+        overflow: hidden;
+        /* padding: 100px; */
+    }
+    .article{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0px 200px;
+        /* flex-wrap: wrap; */
+        /* align-items: baseline; */
+    }
+    .art-img{
+        background: url(img/poulet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 400px;
+        border-radius: 0px 40px;
+    }
+    .art-imgs{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .art-imgb{
+        background: url(img/poulet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+    }
+    .art-images{
+        display: grid;
+        justify-content: space-between;
+        /* width: 100%; */
+    }
+    .art-detail{
+        display: grid;
+        gap: 2px;
+        /* width: 100%; */
+    }
+    input{
+        height: 50px;
+        width: 80%;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 5px;
+        /* width: 100%; */
+    }
+    form{
+        padding: 10px 10px;
+        display: flex;
+        justify-content:space-between;
+        /* width: 50%; */
+    }
+    button{
+        height: 50px;
+        /* width: 0%; */
+        border-radius: 10px;
+        border: none;
+        padding: 0px 15px;
+        background: var(--primary);
+        color: wheat;
+        /* width: 100%; */
+    }
+    .back{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 200px;
+        border-bottom: solid 2px white;
+        margin-bottom:10px ;
+    }
+    body{
+        /* overflow: hidden; */
+    }
+    .send{
+        display: flex;
+        height: 100%;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .article{
+            padding: 0px 100px;
+        }
+        .back{
+            padding: 10px 100px;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .article{
+            padding: 0px 50px;
+        }
+        .back{
+            padding: 10px 50px;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .article{
+            padding: 0px 20px;
+            flex-wrap: wrap;
+        }
+        .back{
+            padding: 10px 20px;
+        }
+        .art-images{
+            display: inline;
+            width: 100%;
+            /* justify-content: space-between; */
+            /* width: 100%; */
+        }
+        .art-img{
+            background: url(img/poulet.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            height: 400px;
+            border-radius: 0px 40px;
+        }
+
+    }
+</style>
+<body>
+    
+      
+    <div class="art-plag">
+        <div class="back">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                </svg>
+            </a>
+            
+            Article
+        </div>
+        
+        <section class="article">
+            <div class="art-images">
+                <div class="art-img">
+    
+                </div>
+                <div class="art-imgs">
+                    <div class="art-imgb">
+                    </div>
+                    <div class="art-imgb">
+                    </div>
+                    <div class="art-imgb">
+                    </div>
+                    <div class="art-imgb">
+                    </div>
+                    <div class="art-imgb">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="art-detail">
+                
+                <h3>Poulet de chair</h3>
+                <div>
+                    <div>
+                        <strong>Poids</strong>:
+                        <span>3Kg</span>
+                    </div>
+                    
+                    <div>
+                        <strong>PU</strong>:
+                        <span>10$</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <strong>Description</strong> : 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam in quisquam illum perferendis corporis fuga rerum quos excepturi dolorem nesciunt provident ducimus, modi sit possimus quod ti repudiandae sed architecto ratione voluptatem error beatae excepturi. Molestiae deleniti, debitis corrupti fuga quaerat excepturi odit, voluptas veritatis quia nesciunt distinctio quos ab iusto nisi alias nobis recusandae obcaecati quidem vitae illo, doloribus sed tempora officiis! Eum ratione est officiis doloremque vel, impedit soluta quibusdam nesciunt obcaecati explicabo non minima esse nemo cum aspernatur assumenda. Laborum repellat iure nam architecto. At accusantium, quas numquam quos nihil praesentium hic perferendis tempore, nisi vel obcaecati. Iure sint inventore debitis corporis soluta quo esse molestias temporibus veritatis asperiores perferendis blanditiis saepe tempore explicabo, obcaecati at nisi iusto id culpa illo, quas, adipisci laudantium rem? A, alias accusantium!
+                </div>
+                <div>
+                    <form action="">
+                        <input type="number" placeholder="Quantite de la marchandise">
+                        <button>Valider</button>
+                    </form>
+                </div>
+                
+                    
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

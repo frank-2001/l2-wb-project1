@@ -1,5 +1,5 @@
-@font-face { font-family: forte; 
-    src: url('/font/forte-regular_Wnvic.zip'); 
+@font-face { font-family: fortex; 
+    src: url('font/forte/forte.ttf'); 
 } 
 :root {
 	--primary: rgb(175, 24, 13);
@@ -9,6 +9,8 @@ body{
     font-family: sans-serif;
     margin: 0;
     background: rgb(247, 206, 206);
+    width: 100%;
+    /* overflow-y: hidden; */
 }
 header{
     background: url("img/img\ \(1\).webp");
@@ -26,21 +28,26 @@ header>section>.head{
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding:  10px 100px;
+    padding:  10px 0px;
     position: fixed;
-    width: 85%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.548);
+    flex-wrap: wrap;
+    overflow: hidden;
+
 }
 .title{
     /* margin: 0 100px; */
     font-size: larger;
     font-style: bold;
-    font-family: forte;
+    font-family: fortex;
     font-size: 150%;
+    padding-left: 100px;
 }
 .menu{
     display: flex;
     gap: 20px;
+    padding-right: 100px;
     /* margin: 0 100px; */
 }
 .menu >a{
@@ -54,6 +61,11 @@ header>section>.head{
     background: var(--primary);
     border-radius: 2px;
 }
+.icon-menu{
+    width: 40px;
+    padding-right: 20px ;
+    display: none;
+}
 .about{
     display: flex;
     height: 100%;
@@ -61,10 +73,11 @@ header>section>.head{
     justify-content: space-between;
     padding: 0 100px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .about > .slogan{
     color: white;
-    font-family: forte;
+    font-family: fortex;
     font-size: 250%;
     line-height: 1;
 }
@@ -99,7 +112,7 @@ header>section>.head{
     color: var(--primary);
 }
 .articles{
-    padding: 10px 100px;
+    padding: 10px 200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -134,13 +147,10 @@ header>section>.head{
 }
 .articles > .article > .img{
     height: 250px;
-    width: 200px;
-    background: url("img/poulet.jpg");
-    background-position: center;
-    background-size: cover;
+    width: 200px;    
     border-radius: 10px 10px 0px 0px;
 }
-.articles > .article > .img:nth-child(even){
+/* .articles > .article > .img:nth-child(even){
     height: 250px;
     width: 200px;
     background: url("img/œuf.jpg");
@@ -155,16 +165,15 @@ header>section>.head{
     background-position: center;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
-}
-.articles > .article > .img:hover{
-    height: 250px;
-    width: 250px;
-    border-radius: 10px 10px 10px 10px;
+} */
+.articles > .article:hover{
+    background-color: rgba(0, 0, 0, 0.582);
 }
 h2{
-    padding: 0 100px;
-    font-family: forte;
+    /* padding: 0 100px; */
+    font-family: fortex;
 }
+
 footer{
     height: 10em;
     display: grid;
@@ -173,7 +182,7 @@ footer{
     margin: 30px 0 0 0;
     color: white;
     text-align: center;
-    font-family: forte;
+    font-family: fortex;
 }   
 .contact{
     display: grid;
@@ -208,5 +217,10 @@ footer{
     justify-content: space-between;
 }
 .contact >h1{
-    font-family: forte;
+    font-family: fortex;
 }
+.icon{
+    height: 20px;
+    width: 20px;
+}
+
