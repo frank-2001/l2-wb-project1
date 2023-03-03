@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mk-store| contact</title>
+    <title>Mk-store | contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="contact">
-    <div>
-        <a href="index.html">retour</a>
-        <span>Mk-Store</span>
+<style>
+    .back{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-bottom: solid 2px white;
+        margin-bottom:10px ;
+    }
+</style>
+<body>
+    <div class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+            </svg>
+        </a>
         
+        Contack
     </div>
-    <h1>Contact us</h1>
-    <form action="#">
-        <input type="text" placeholder="Your name">
-        <input type="mail"  placeholder="Your mail  adress">
-        <textarea name="" id="" cols="50" rows="10" placeholder="Your message"></textarea>
+    <div id="msg"></div>
+    <div class="contact">
+        <h1>Contact us</h1>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="mail" name="mail" placeholder="Your mail  adress">
+        <textarea name="" id="" cols="50" name="message" rows="10" placeholder="Your message"></textarea>
         <button>Send</button>
     </form>
+    </div>
+    
 </body>
+<script>
+    let contactForm=document.getElementById("contactForm")
+    contactForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let form=new FormData(contactForm)
+    contactForm.reset()
+    let msg=document.getElementById("msg")
+    msg.setAttribute("style","background-color: white;text-align:center;padding:1% 0%")
+    msg.innerText="We thank you for your message "+form.get("name")
+})
+</script>
+<!-- <script src="script.js"></script> -->
 </html>

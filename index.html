@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="st.css">
 </head>
 <body>
+    <div class="loading show" id="loading" style="display: none;">
+        LOADING.....
+    </div>
     <section class="mobile-menu-off" id="fs-menu">
         <div class="mobile-menu ">
             <div>
@@ -51,7 +54,7 @@
                 </div>
                 <div class="signup">
                     <strong>Sign-up</strong>
-                    <form action="">
+                    <form action="" id="formSignup">
                         <input type="telephone" placeholder="Phone number">
                         <input type="password" placeholder="Password">
                         <button>valider</button>
@@ -72,5 +75,16 @@
         &copy; mk-Store 2023
     </footer>
 </body>
+
 <script src="script.js"></script>
+<script>
+    let formSignup=document.getElementById("formSignup")
+    formSignup.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        document.getElementById("loading").setAttribute("style","display:block")
+        setTimeout(() => {
+            document.getElementById("loading").setAttribute("style","display:none")    
+        }, 1000);
+    })
+</script>
 </html>

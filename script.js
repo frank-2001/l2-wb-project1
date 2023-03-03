@@ -35,4 +35,5 @@ img.forEach(elt => {
     articles.innerHTML+=article(elt) 
 });
 
+
 // articles.append(article)

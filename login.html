@@ -12,14 +12,26 @@
         <a href="index.html">retour</a>
         <span>Mk-Store</span> 
     </div>
+    <div id="msg"></div>
     <h1>Welcome to our e-shop</h1>
     
-    <form action="#">
+    <form action="#" id="loginForm">
         Login
         <!-- <input type="text" placeholder="Your name"> -->
-        <input type="tel"  placeholder="Your phone number">
-        <input type="password" placeholder="Password">
+        <input type="tel" name="tel" placeholder="Your phone number">
+        <input type="password" name="pass" placeholder="Password">
         <button>Submit</button>
     </form>
 </body>
+<script>
+    let contactForm=document.getElementById("loginForm")
+    contactForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let form=new FormData(contactForm)
+    contactForm.reset()
+    let msg=document.getElementById("msg")
+    msg.setAttribute("style","background-color: red;text-align:center;padding:1% 0%;color:white")
+    msg.innerText="Login success"
+})
+</script>
 </html>
